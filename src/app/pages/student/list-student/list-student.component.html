@@ -1,0 +1,22 @@
+<button class="btn" routerLink="../student-add">Add Student</button>
+<br>
+<div class="tabel-container">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Std</th>
+            <th>Age</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let s of studentList">
+            <td>{{ s.name }}</td>
+            <td> {{ s.std }} </td>
+            <td> {{ s.age }} </td>
+            <td class="icon-container">
+                <nb-icon nbTooltip="Details" icon="eye-outline"></nb-icon>
+                <nb-icon nbTooltip="Edit" icon="edit-outline" [routerLink]="['../student-edit', s.id]"></nb-icon>
+                <nb-icon nbTooltip="Delete" icon="person-delete-outline" (click)="onDelete(s.id)"></nb-icon>
+            </td>
+        </tr>
+    </table>
+</div>

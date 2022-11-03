@@ -1,0 +1,51 @@
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+tr{
+    height: 40px;
+    border-bottom: 1px solid;
+}
+
+th, td{ 
+    /* border: 1px solid; */
+    width: 25%;
+}
+
+th{
+    background-color: whitesmoke;
+}
+
+nb-icon {
+    width: 30px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.btn{
+    border : none;
+    padding: 10px 20px;
+    background-color: #0000f0;
+    margin: 20px 0px 50px 50px;
+    font-size: 20px;
+    color: white;
+    transition: .2s ease;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #0000f0;
+    border: 2px solid #0000f0;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+}

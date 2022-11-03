@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-authentication-a44b5": {
+      "hosting": {
+        "firebase-authentication": [
+          "fir-authentication-a44b5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-authentication-a44b5"
+  }
+}

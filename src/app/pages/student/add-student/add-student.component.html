@@ -1,0 +1,31 @@
+<div class="container">
+    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col">
+                <label>Name</label>
+            </div>
+            <div class="col">
+                <input nbInput type="text" formControlName="name" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Standard</label>
+            </div>
+            <div class="col">
+                <input nbInput type="text" formControlName="std" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Age</label>
+            </div>
+            <div class="col">
+                <input nbInput type="text" formControlName="age" />
+            </div>
+        </div>
+        <div class="row">
+            <button nbButton status="primary" type="submit" class="btn">{{ isEditable ? 'Edit Student' : 'Add Student'}}</button>
+        </div>
+    </form>
+</div>
